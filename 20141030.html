@@ -9,7 +9,111 @@
 		<link href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet">
 	<style>	
 	body{
-		scrollbar-arrow-color:#4b0082;
+		<divdiv class="slider_container">
+		    <divdiv>
+		        <divimg src="images/image1.png" alt="pure css3 slider" />
+		        <divspan class="info">Image Description
+		    <div/div>
+		    <divdiv>
+		        <divimg src="images/image2.png" alt="pure css3 slider" />
+		        <divspan class="info">Image Description
+		    <div/div>
+		    <divdiv>
+		        <divimg src="images/image3.png" alt="pure css3 slider" />
+		        <divspan class="info">Image Description
+		    <div/div>
+		    <divdiv>
+		        <divimg src="images/image4.png" alt="pure css3 slider" />
+		        <divspan class="info">Image Description
+		    <div/div>
+		    <divdiv>
+		        <divimg src="images/image5.png" alt="pure css3 slider" />
+		        <divspan class="info">Image Description
+		    <div/div>
+		<div/div>
+		.slider_container {
+		    margin: 30px auto;
+		    width: 400px;
+		    height: 280px;
+		    position: relative;
+		    border: 20px solid;    
+		    border-color: #fff;
+		    border-bottom-width: 100px;
+		    background-color: #f5f5f5;
+		    box-shadow: #666 0 0 5px;
+		}
+		
+		.slider_container div {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		}
+		.slider_container div {
+		    -webkit-animation: round 25s linear infinite;
+		            animation: round 25s linear infinite;
+		}
+		
+		@-webkit-keyframes round {
+		    4% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 0 - 1秒 淡入*/
+		    }
+		    20% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 1- 5秒靜止*/
+		    }
+		    24% {
+		        opacity: 0;
+		        filter: alpha(opacity=0);
+		        /* 5-6秒淡出*/
+		    }
+		}
+		@keyframes round {
+		    4% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 0 - 1秒 淡入*/
+		    }
+		    20% {
+		        opacity: 1;
+		        filter: alpha(opacity=100);
+		        /* 1- 5秒靜止*/
+		    }
+		    24% {
+		        opacity: 0;
+		        filter: alpha(opacity=0);
+		        /* 5-6秒淡出*/
+		    }
+		}
+		.slider_container div:nth-child(5) {
+		    -webkit-animation-delay: 0s;
+		            animation-delay: 0s;
+		}
+		
+		.slider_container div:nth-child(4) {
+		    -webkit-animation-delay: 5s;
+		            animation-delay: 5s;
+		}
+		
+		.slider_container div:nth-child(3) {
+		    -webkit-animation-delay: 10s;
+		            animation-delay: 10s;
+		}
+		
+		.slider_container div:nth-child(2) {
+		    -webkit-animation-delay: 15s;
+		            animation-delay: 15s;
+		}
+		
+		.slider_container div:nth-child(1) {
+		    -webkit-animation-delay: 20s;
+		            animation-delay: 20s;
+		}
+	/*	scrollbar-arrow-color:#4b0082;
 	      	scrollbar-face-color:#87cefa;
 		scrollbar-track-color: #f0f8ff;
 		scrollbar-highlight-color: #00fa9a;
@@ -17,41 +121,9 @@
 	      	scrollbar-darkshadow-color:#00bfff;
 	      	scrollbar-shadow-color: #00fa9a;
 	      	
-	      	<div id="slider">
-			<figure>
-			<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
-			<img src="http://demosthenes.info/assets/images/taj-mahal.jpg" alt="">
-			<img src="http://demosthenes.info/assets/images/ibiza.jpg" alt="">
-			<img src="http://demosthenes.info/assets/images/ankor-wat.jpg" alt="">
-			<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
-			</figure>
-		</div>
-		@keyframes slidy {
-			0% { left: 0%; }
-			20% { left: 0%; }
-			25% { left: -100%; }
-			45% { left: -100%; }
-			50% { left: -200%; }
-			70% { left: -200%; }
-			75% { left: -300%; }
-			95% { left: -300%; }
-			100% { left: -400%; }
-			}
-			
-			body { margin: 0; } 
-			div#slider { overflow: hidden; }
-			div#slider figure img { width: 20%; float: left; }
-			div#slider figure { 
-			  position: relative;
-			  width: 500%;
-			  margin: 0;
-			  left: 0;
-			  text-align: left;
-			  font-size: 0;
-			  animation: 30s slidy infinite; 
-			}
+		
 
- 		<!--cursor:help;
+ 		-cursor:help;
  		background-image: url("http://0.share.photo.xuite.net/maruko.chan/10cc5cc/9215516/1021207984_l.jpg"); 
  		background-repeat: no-repeat; 
  		background-attachment: scroll;
@@ -61,7 +133,7 @@
  		margin-right: 10%;
  		
  		font-family:"Indie Flower","微軟正黑體"!important;
-		-->
+		
 		
 		
 	}
@@ -72,7 +144,7 @@
 	a img:hover{
 		opacity:3;
 	}
-	
+	*/
 	</style>	
 	
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
